@@ -1,0 +1,105 @@
+html{box-sizing: border-box;}
+*,*::before,*::after{
+  box-sizing: inherit;
+}
+body{
+  margin: 0;
+  height: 0;
+  font-size: 14px;
+  background-color: #2f2f2f;
+}
+.cf::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+.wrapper{
+  position: relative;
+  width: 500px;
+  min-height: 660px;
+  background-color: #fdec51;
+  margin: 30px auto 0;
+  padding: 65px 60px 30px;
+}
+a{
+  display: inline-block;
+  text-decoration: none;
+}
+.site_header_title{
+  float: left;
+  margin: 0;
+}
+.site_header_link{
+  float: right;
+}
+.account_picture{
+  position: relative;
+  margin-top: 32px;
+  margin-left: 40px;
+  width: 65px;
+  height: auto;
+  z-index: 2;
+  border-radius: 50%;
+}
+.site_header_link .fa-solid{
+  transition: .3s ease all;
+}
+.site_header_link .fa-solid:hover{
+  color: gold;
+}
+.buttons{
+  position: absolute;
+  right: 60px;bottom: 30px;
+}
+.button{
+  color: #6e693f;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.button+.button{
+margin-left: 45px;
+}
+.question_section{
+  top: 150px;left: 60px;
+  position: absolute;
+  width: 500px;
+  min-height: 440px;
+  padding: 65px 40px 45px;
+  background-color: #fff;
+  z-index: 0;
+  box-shadow: 0  5px 18px 0 rgba(0, 0, 0, .4);
+}
+.form_wrap--item{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #dedede;
+  margin-bottom: 20px;
+}
+label{
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #aaa;
+  margin-bottom: 7px;
+}
+input{
+  font-size: 15px;
+  color: #807575;
+  border: none;
+  outline: none;
+  padding: 3px 0;
+  margin-bottom: 4px;
+}
+input::placeholder,
+textarea::placeholder{
+  font-weight: 500;
+  color: #807575;
+}
+.form_wrap--item.items{
+  flex-direction: row;
+}
+textarea{
+  border: none;
+  outline: none;
+  max-width: 100%;
+}
